@@ -1,0 +1,35 @@
+idx_cls acts as the column while i acts as the rows.
+
+A solver is a piece of mathematical software, possibly in the form 
+of a stand-alone computer program or as a software library, that 
+'solves' a mathematical problem.
+
+The solver orchestrates model optimization by coordinating the 
+network's forward inference and backward gradients to form parameter 
+updates that attempt to improve the loss.
+
+
+Multinomial logistic regression is a simple extension of binary 
+logistic regression that allows for more than two categories of 
+the dependent or outcome variable.
+
+Multinomial logistic regression is used when you have a categorical 
+dependent variable with two or more unordered levels (i.e. two or 
+more discrete outcomes). It is practically identical to logistic 
+regression, except that you have multiple possible outcomes instead 
+of just one.
+
+For example, children’s food choices are influenced by their parents’ 
+choices and the children’s pastimes (e.g. sports enthusiast vs. gamer).
+ You could study the relationship between a child’s food choices with 
+their parents’ choices and children’s pastimes. The dependent variable 
+levels would be the different food choices (fast food, healthy choices,
+ protein packed, vegan etc.). Or you might study how workers’ education
+ levels and time on the job affect promotions. The independent variable
+s would be education levels and time on the job, and the levels of the 
+dependent variable might be promotion to team-leader roles, sales 
+positions, or management positions.
+
+The solvers implemented in the class Logistic Regression are 
+“liblinear”, “newton-cg”, “lbfgs”, “sag” and “saga”
+

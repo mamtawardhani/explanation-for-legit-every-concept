@@ -1,0 +1,8 @@
+Typically, a regression analysis is done for one of two purposes: In order to predict 
+the value of the dependent variable for individuals for whom some information concerning 
+the explanatory variables is available, or in order to estimate the effect of some explanatory 
+variable on the dependent variable
+
+
+
+9436302599

@@ -1,0 +1,79 @@
+The rapid growth of data collection has led to a new era of information.
+Data is being used to create more efficient systems and this is where
+Recommendation Systems come into play. Recommendation Systems are a
+type of information filtering system as they improve the quality of search
+results and provide items that are more relevant to the search item or
+are related to the search history of the user.
+They are used to predict the rating or preference that a user would give to
+an item. Almost every major tech company has applied them in some
+form or the other: Amazon uses it to suggest products to customers,
+YouTube uses it to decide which video to play next on autoplay, and
+Facebook uses it to recommend pages to like and people to follow.
+Moreover, companies like Netflix and Spotify depend highly on the
+effectiveness of their recommendation engines for their business and
+success.
+
+There are basically three types of recommender systems:
+● Demographic Filtering- They offer generalized recommendations to every
+user, based on movie popularity and/or genre. The system recommends the 
+same movies to users with similar demographic features. Since
+each user is different, this approach is considered to be
+too simple. The basic idea behind this system is that movies that are more 
+popular and critically acclaimed will have a higher probability of
+being liked by the average audience.
+Demographic information examples include: age, race, ethnicity, gender, 
+marital status, income, education, and employment.
+
+((v/(v+m))*R)+((m/(v+m))*C)
+Here,
+● v - The number of votes for the
+movies (or number of
+ratings/reviews in case of an
+amazon product)
+● m - The minimum votes
+required to be listed in the
+chart
+● R - Average rating of the movie
+● C - Mean votes across the
+whole report
+
+● Content Based Filtering
+Content-based filtering is a type of recommender system that attempts to guess what a user 
+may like based on that user’s activity.
+
+The general idea behind content based filtering is that if a person likes a particular item, 
+he or she will also like an item that is similar to it.
+
+cast, crew, keywords and genres.
+
+
+Content-based filtering makes recommendations by using keywords and attributes assigned to 
+objects in a database (e.g., items in an online marketplace) and matching them to a user 
+profile. The user profile is created based on data derived from a user’s actions, such as 
+purchases, ratings (likes and dislikes), downloads, items searched for on a website and/or 
+placed in a cart, and clicks on product links. 
+
+They suggest similar items based on a particular 
+item. This system uses item metadata, such as genre, director, description, 
+actors, etc. for movies, to make these recommendations. The general
+idea behind these recommender systems is that if a person likes a 
+particular item, he or she will also like an item that is similar to it.
+
+● Collaborative Filtering- 
+Collaborative filtering is a technique that can filter out items that a user might like on the
+ basis of reactions by similar users.
+
+It works by searching a large group of people and finding a smaller set of users with tastes 
+similar to a particular user. It looks at the items they like and combines them to create a 
+ranked list of suggestions.
+
+This system matches persons with similar interests and provides recommendations based on
+this matching. Collaborative filters do not require item
+metadata like its content-based counterparts.
+
+
+
+LINK: https://www.kaggle.com/tmdb/tmdb-movie-metadata
+
+
+

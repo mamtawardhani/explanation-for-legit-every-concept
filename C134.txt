@@ -1,0 +1,37 @@
+The first thing we filtered out is
+Gravity:
+Mercury - 3.7m/s
+Venus - 8.87m/s
+Earth - 9.8m/s
+Mars - 3.8m/s
+
+
+Now if we talk about their position in the solar system; (0.38 to 2 AU),
+Mercury - 0.4AU
+Venus - 0.7AU
+Earth - 1AU
+Mars - 1.5AU
+This again, makes all these planets lie in the Goldilock zone!
+
+
+Now, if we talk about the speed of
+these planets, our final filter then:
+Mercury - 47km/s
+Venus - 35km/s
+Earth - 30km/s
+Mars - 24km/s
+Again, this makes all these planets habitable!
+
+Mercury -
+Mercury is not habitable since it does not have an atmosphere and its
+temperature varies from 100 Degree Celsius to 700 Degree Celsius.
+
+Venus - Venus is an extreme planet and it’s very hot. It’s atmosphere 
+traps the heat on the surface and its temperature is a whopping 700
+Degree Celsius. There are also rains of sulphuric acid.
+
+Earth - Seems like just the right planet to exist.
+
+Mars - Mars has some atmosphere and it also has water on its surface. 
+The temperatures are a bit extreme (20 Degree to -150 degree) but it is 
+still manageable compared to others.

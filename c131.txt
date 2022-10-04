@@ -1,0 +1,68 @@
+name - name of the planet.
+
+light_years_from_earth - Distance
+of the exo-planet from earth in light
+years.
+
+planet_mass - Mass of the planet.
+stellar_magnitude - This is the
+brightness of the host star of the
+planet when observed from Earth (just
+as the sun is our host star).
+
+discovery_date - This is the year of
+discovery for the exo-planet.
+
+planet_type - This is the type of the
+planet (Gas Giant, Super Earth, etc.).
+
+planet_radius - This is the radius of
+the exo-planet with respect to Earth or
+Jupiter.
+
+orbital_radius - This is the average
+distance of this exo-planet from its
+sun. Just like our solar system has 1
+sun, there are multiple solar systems
+that contain many planets and sun(s).
+orbital_period - This is the time it
+takes to complete one orbit of it’s sun.
+
+eccentricity - This denotes how
+circular the orbit is. It might be oval in
+shape too. The lower the eccentricity,
+the more circular is the orbit.
+
+solar_system_name - The name of
+the host solar system.
+
+planet_discovery_method - This is
+the discovery method which was used
+to find this exo-planet.
+
+planet_orbital_inclination - This is
+the orbital inclination, which means
+that it is the tilt of the exo-planet’s
+orbit when it revolves around its sun.
+planet_density - This is the density
+of the planet.
+
+right_ascension - This is the right
+ascension of the planetary system,
+which is the east-west coordinate by
+which the position of this planet is
+measured.
+
+declination - This is the north-south
+coordinate by which the position of
+the planet is measured.
+
+host_temperature - This is the
+temperature of the host star in Kelvin.
+
+host_mass - This is the amount of
+mass contained in the host star.
+
+host_radius - This is the radius of the
+host star.
+

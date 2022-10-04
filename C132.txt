@@ -1,0 +1,31 @@
+We found out the gravity of all the
+planets and then based on the fact
+that our body can withstand 90 times
+more gravity than what Earth offers,
+we found out a list of 3,951 planets
+that have a gravity of 10 times or
+lower than what we have on Earth,
+just to be comfortable.
+
+
+Now that we have the types of planets that are out there, let’s 
+understand these terms -
+
+Neptune-like => These planets are like neptune! They are big in 
+size and have rings around them. They are also made of Ice.
+
+Super-Earth => These are the planets that have mass greater than 
+earth but smaller than that of Neptune! (Neptune is 17 times Earth)
+
+Terrestrial => It is a planet that is composed primarily of silicate 
+rocks or metals (Like Earth, Mars)
+
+Gas Giant => There are the planets that are composed of Gas (Hydrogen 
+and Helium)
+
+Based on this, let’s try to do some clustering to see if there is any 
+relation between planet type and mass of the planet. It looks like 
+there is but let’s see.
+
+
+

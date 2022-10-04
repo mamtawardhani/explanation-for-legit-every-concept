@@ -1,0 +1,58 @@
+A confusion matrix is a technique for summarizing the
+performance of a classification algorithm.
+
+Classification accuracy alone can be misleading if you have 
+an unequal number of observations in each class or if you have 
+more than two classes in your dataset.
+
+Calculating a confusion matrix can give you a better idea of 
+what your classification model is getting right and what types of 
+errors it is making.
+
+
+A confusion matrix is a summary of prediction results on a 
+classification problem.
+
+The number of correct and incorrect predictions are summarized 
+with count values and broken down by each class. This is the key 
+to the confusion matrix.
+
+The confusion matrix shows the ways in which your classification model
+is confused when it makes predictions.
+
+It gives you insight not only into the errors being made by your classifier 
+but more importantly the types of errors that are being made.
+
+It is this breakdown that overcomes the limitation of using 
+classification accuracy alone.
+
+
+1. True Positives - The values that
+were actually True and were
+predicted to be True as well.
+2. True Negatives - The values that
+were actually False and were
+predicted to be False as well.
+
+
+
+If all the data predicted by our
+algorithm lies in these two buckets,
+our ML algorithm is 100% accurate.
+However, that is rarely the case.
+There are two other buckets in which
+our predictions can lie:
+
+
+3. False Positives - The values that
+were actually False but were predicted to be True.
+4. False Negatives - The values that
+were actually True but were predicted
+to be False.
+
+The accuracy of a model is
+equal to:
+(True Positives + True Negatives) /
+(True Positives + True Negatives +
+False Positives + False Negatives)
+

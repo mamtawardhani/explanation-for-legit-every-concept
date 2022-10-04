@@ -1,0 +1,68 @@
+Naïve Bayes is a classification method based on Bayes’ theorem that 
+derives the probability of the given feature vector being associated 
+with a label. Naïve Bayes has a naive assumption of conditional 
+independence for every feature, which means that the algorithm expects
+ the features to be independent which not always is the case.
+
+Logistic regression is a linear classification method that learns the 
+probability of a sample belonging to a certain class. Logistic 
+regression tries to find the optimal decision boundary that best 
+separates the classes.
+
+
+Logistic regression is like studying only to the pages of your math 
+book assigned for the exam on the other side Naive Bayes is reading 
+all the materials available at the book and learn all the concepts 
+and informational relations. When the question comes logistic one 
+just tries to find answer by only thinking related chapter, Naive 
+one evaluate s the solution with respect to the generic model, conceptual
+ model that is created in mind with the mass of information provided by 
+the all lines of the book. A little silly metaphor :)
+
+1. Both algorithms are used for classification problems
+The first similarity is the classification use case, where both Naive 
+Bayes and Logistic regression are used to determine if a sample belongs
+ to a certain class, for example, if an e-mail is spam or not.
+
+2. Algorithm’s Learning mechanism
+The learning mechanism is a bit different between the two models, 
+where Naive Bayes is a generative model and Logistic regression is a 
+discriminative model. What does this mean?
+Generative model: Naive Bayes models the joint distribution of the 
+feature X and target Y, and then predicts the posterior probability 
+given as P(y|x)
+Discriminative model: Logistic regression directly models the posterior
+probability of P(y|x) by learning the input to output mapping by 
+minimising the error.
+
+Posterior probability can be defined as the probability of event A 
+happening given that event B has occurred, in more layman terms this 
+means that the previous belief can be updated when we have new 
+information. For example, let’s say we think the stock market will 
+go up by 50% next year, this prediction can be updated when we get 
+new information such as updated GPD numbers, interest rates etc.
+
+3. Model assumptions
+Naïve Bayes assumes all the features to be conditionally independent.
+So, if some of the features are in fact dependent on each other 
+(in case of a large feature space), the prediction might be poor.
+Logistic regression splits feature space linearly, and typically 
+works reasonably well even when some of the variables are correlated.
+
+
+
+
+Naive Bayes also assumes that the features are conditionally independent.
+ Real data sets are never perfectly independent but they can be close. 
+In short Naive Bayes has a higher bias but lower variance compared to 
+logistic regression. If the data set follows the bias then Naive Bayes 
+will be a better classifier. Both Naive Bayes and Logistic regression are 
+linear classifiers, Logistic Regression makes a prediction for the 
+probability using a direct functional form where as Naive Bayes figures 
+out how the data was generated given the results.
+
+
+Bias is the simplifying assumptions made by the model to make the target 
+function easier to approximate. Variance is the amount that the estimate 
+of the target function will change given different training data.
+

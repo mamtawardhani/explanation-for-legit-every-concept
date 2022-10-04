@@ -1,0 +1,20 @@
+The numpy.ravel() function returns contiguous flattened 
+array(1D array with all the input-array elements and with 
+the same type as it). 
+
+x = np.array([[1, 3, 5], [11, 35, 56]])  
+y=np.ravel(x)  
+y  
+
+
+The coef_ contain the coefficients for the prediction of each 
+of the targets. It is also the same as if you trained a model 
+to predict each of the targets separately. (it's the slope)
+
+
+the intercept_, shows the point where the estimated 
+regression line crosses the 𝑦 axis. (Y-intercept c)
+
+
+The numpy.linspace() function returns number spaces 
+evenly w.r.t interval.

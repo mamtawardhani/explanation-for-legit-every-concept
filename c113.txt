@@ -1,0 +1,41 @@
+Pandas dataframe.quantile() function return values at
+the given quantile over requested axis, a numpy.percentile.
+
+
+1 1 3 4 5 6 7 8
+
+
+4 4 10 11 15 7 14 12 5
+
+The IQR is used to measure how spread out the data points in 
+a set are from the mean of the data set. The higher the IQR, 
+the more spread out the data points; in contrast, the smaller 
+the IQR, the more bunched up the data points are around the mean.
+
+The interquartile range is an especially useful measure of 
+variability for skewed distributions.
+
+For these distributions, the median is the best measure of central 
+tendency because it’s the value exactly in the middle when all values
+ are ordered from low to high.
+
+Along with the median, the IQR can give you an overview of where most
+ of your values lie and how clustered they are.
+
+The IQR is also useful for datasets with outliers. Because it’s based
+ on the middle half of the distribution, it’s less influenced by 
+extreme values.
+
+
+The IQR is a type of resistant measure. The second measure of spread 
+or variation is called the standard deviation (SD).
+
+You should use the interquartile range to measure the spread of 
+values in a dataset when there are extreme outliers present. 
+Conversely, you should use the standard deviation to measure the 
+spread of values when there are no extreme outliers present.
+
+df = pd.DataFrame({"A":[1, 5, 3, 4, 2],
+                   "B":[3, 2, 4, 3, 4],
+                   "C":[2, 2, 7, 3, 4], 
+                   "D":[4, 3, 6, 12, 7]})

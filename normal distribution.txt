@@ -1,0 +1,4 @@
+The normal distribution is a continuous probability distribution choose probability density 
+function specified by two parameters  μ  and  σ . The Greek symbol  μ  is the mean (arithmetic average) 
+of the normal distribution. The Greek symbol  sigma  is the standard deviation which measures the spread 
+of the distribution. You can think of the standard deviation as a measure if the individual differences of the observations.

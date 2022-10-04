@@ -1,0 +1,211 @@
+items={[
+                { label: 'Image 1', value: 'image_1' },
+                { label: 'Image 2', value: 'image_2' },
+                { label: 'Image 3', value: 'image_3' },
+                { label: 'Image 4', value: 'image_4' },
+                { label: 'Image 5', value: 'image_5' },
+                { label: 'Image 6', value: 'image_6' },
+                { label: 'Image 7', value: 'image_7' },
+                { label: 'Image 8', value: 'image_8' },
+                { label: 'Image 9', value: 'image_9' },
+                { label: 'Image 10', value: 'image_10' },
+                { label: 'Image 11', value: 'image_11' },
+                { label: 'Image 12', value: 'image_12' },
+                { label: 'Image 13', value: 'image_13' },
+                { label: 'Image 14', value: 'image_14' },
+                { label: 'Image 15', value: 'image_15' },
+                { label: 'Image 16', value: 'image_16' },
+                { label: 'Image 17', value: 'image_17' },
+                { label: 'Image 18', value: 'image_18' },
+                { label: 'Image 19', value: 'image_19' },
+                { label: 'Image 20', value: 'image_20' },
+                { label: 'Image 21', value: 'image_21' },
+                { label: 'Image 22', value: 'image_22' },
+                { label: 'Image 23', value: 'image_23' },
+                { label: 'Image 24', value: 'image_24' },
+                { label: 'Image 25', value: 'image_25' },
+              ]}
+
+
+
+
+
+
+AAA262 (green)  AFA760
+898B8C (blue)    8F9887
+
+
+
+  bottomTabStyle: {
+    backgroundColor: '#2f345d',
+    borderTopLeftRadius: RFValue(40),
+    borderTopRightRadius: RFValue(40),
+    overflow: 'hidden',
+    position: 'absolute',
+    marginTop:20,
+    borderWidth:2,
+    borderColor:"biege"
+  },
+
+<Bottom.Screen name={'Home'} component={Home} />
+      <Bottom.Screen name={'Something'} component={Something} />
+
+
+              defaultValue={this.state.previewImage}
+              containerStyle={{
+                height: 40,
+                width: 120,
+                borderRadius: RFValue(20),
+                marginBottom: RFValue(20),
+                marginHorizontal: RFValue(10),
+              }}
+
+              onChangeItem={(item) =>
+                this.setState({
+                  previewImage: item.value,
+                })
+              }
+              
+              onOpen={() => {
+                this.setState({ dropdownHeight: 170, width: 120 });
+              }}
+              onClose={() => {
+                this.setState({ dropdownHeight: 40 });
+              }}
+              
+              
+              arrowStyle={
+                this.state.light_theme
+                  ? styles.dropdownLabelLight
+                  : styles.dropdownLabel
+              }
+
+
+
+
+
+
+
+
+
+
+
+import React, { Component } from "react";
+import { StyleSheet, View, Button } from "react-native";
+import * as Google from "expo-google-app-auth";
+import firebase from "firebase";
+
+export default class LoginScreen extends Component {
+  isUserEqual = (googleUser, firebaseUser) => {
+    if (firebaseUser) {
+      var providerData = firebaseUser.providerData;
+      for (var i = 0; i < providerData.length; i++) {
+        if (
+          providerData[i].providerId ===
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID &&
+          providerData[i].uid === googleUser.getBasicProfile().getId()
+        ) {
+          // We don't need to reauth the Firebase connection.
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
+  onSignIn = googleUser => {
+    // We need to register an Observer on Firebase Auth to make sure auth is initialized.
+    var unsubscribe = firebase.auth().onAuthStateChanged(firebaseUser => {
+      unsubscribe();
+      // Check if we are already signed-in Firebase with the correct user.
+      if (!this.isUserEqual(googleUser, firebaseUser)) {
+        // Build Firebase credential with the Google ID token.
+        var credential = firebase.auth.GoogleAuthProvider.credential(
+          googleUser.idToken,
+          googleUser.accessToken
+        );
+
+        // Sign in with credential from the Google user.
+        firebase
+          .auth()
+          .signInWithCredential(credential)
+          .then(function(result) {
+            if (result.additionalUserInfo.isNewUser) {
+              firebase
+                .database()
+                .ref("/users/" + result.user.uid)
+                .set({
+                  gmail: result.user.email,
+                  profile_picture: result.additionalUserInfo.profile.picture,
+                  locale: result.additionalUserInfo.profile.locale,
+                  first_name: result.additionalUserInfo.profile.given_name,
+                  last_name: result.additionalUserInfo.profile.family_name,
+                  current_theme: "dark"
+                })
+                .then(function(snapshot) {});
+            }
+          })
+          .catch(error => {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+          });
+      } else {
+        console.log("User already signed-in Firebase.");
+      }
+    });
+  };
+
+  signInWithGoogleAsync = async () => {
+    try {
+      const result = await Google.logInAsync({
+        behaviour: "web",
+        androidClientId:
+          "",
+        iosClientId:
+          "",
+        scopes: ["profile", "email"]
+      });
+
+      if (result.type === "success") {
+        this.onSignIn(result);
+        return result.accessToken;
+      } else {
+        return { cancelled: true };
+      }
+    } catch (e) {
+      console.log(e.message);
+      return { error: true };
+    }
+  };
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Button
+          title="Sign in with Google"
+          onPress={() => this.signInWithGoogleAsync()}
+        ></Button>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  }
+});
+
+
+
+
+
+

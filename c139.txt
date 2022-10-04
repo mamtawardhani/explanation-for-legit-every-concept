@@ -1,0 +1,60 @@
+Demographic Filtering- They offer generalized recommendations to every
+user, based on movie popularity and/or genre.
+
+We need a metric or score to
+rate movie
+● We then need to calculate
+the score for every movie
+● We finally need to sort the
+scores and recommend the
+best rated movie to the users
+
+
+
+We first need a metric or a score to
+rate the movie. Average rating, but nope.
+
+The weighted rating formula:
+
+((v/(v+m))*R)+((m/(v+m))*C)
+Here,
+● v - The number of votes for the
+movies (or number of
+ratings/reviews in case of an
+amazon product)
+● m - The minimum votes
+required to be listed in the
+chart
+● R - Average rating of the movie
+● C - Mean votes across the
+whole report
+
+
+
+
+
+If we look at our data, we already
+have v(vote count) and
+R(vote_average)! We can calculate
+the C by calculating the mean of all
+the vote averages.
+
+
+Next, we want to determine an
+appropriate value for m, the
+minimum votes required to be listed
+in the chart. Do you know how we can
+do that?
+
+We can take the 90th Percentile as
+our cutoff. In other words, for a movie
+to feature in the charts, it must have
+more votes than at least 90% of the
+rest of the movies in the list.
+This is called a quantile. In future you
+will be writing competitive exams
+where this quantile concept will come
+to place. For instance, if you get 90%
+quantile then it means, you were
+better than 90% of the other students
+who appeared for the exam.

@@ -1,0 +1,85 @@
+K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data 
+(i.e., data without defined categories or groups). The goal of this algorithm is to find groups in 
+the data, with the number of groups represented by the variable K.
+
+The K-means clustering algorithm is used to find groups which have not been explicitly labeled in the 
+data. This can be used to confirm business assumptions about what types of groups exist or to identify 
+unknown groups in complex data sets. 
+
+
+STEP 1: Choose the random number of K (clusters)
+STEP 2: Randomly select the center points for K clusters: 
+https://drive.google.com/uc?export=vi
+ew&id=1PQ28Olk1DQzXC0HnSEudZ
+SUx4N8LKWfA
+
+
+STEP 3: Assign each data point to the nearest centroid:
+https://drive.google.com/uc?export=vi
+ew&id=10AeUS7ARbR_EN9sNhtl7F8
+cuOGDNhjOV
+
+
+STEP 4: Shift the centroids a little for all the clusters.
+https://drive.google.com/uc?export=vi
+ew&id=1F7IfWlqj5JT8zqUVetHbZOvY
+yDUvcBvU
+
+STEP 5: Re-assign each data point to the new closest centroid. If any points
+got reassigned, repeat `Step 4` again otherwise the model is ready.
+
+https://drive.google.com/uc?export=vi
+ew&id=1sJx_QRvVDFXE1Otm-uApU
+0FvTMF4600t
+
+
+
+SUMMARY : https://drive.google.com/uc?export=vi
+ew&id=1ZOG4uYODnOBpJwfpjx5E3
+TVN8qIx0EJw
+
+
+Inertia measures how well a dataset was clustered by K-Means. 
+It is calculated by measuring the distance between each data 
+point and its centroid, squaring this distance, and summing these 
+squares across one cluster.
+
+
+
+Note: Python iloc() function enables us to select a particular cell of 
+the dataset, that is, it helps us select a value that belongs to a 
+particular row or column from a set of values of a data frame or dataset.
+
+
+
+
+
+Applications:
+kmeans algorithm is very popular and used in a variety of applications
+such as market segmentation, document clustering, image segmentation 
+and image compression, etc. The goal usually when we undergo a cluster
+analysis is either:
+
+Get a meaningful intuition of the structure of the data we’re dealing 
+with.
+
+Cluster-then-predict where different models will be built for different
+subgroups if we believe there is a wide variation in the behaviors of 
+different subgroups. An example of that is clustering patients into 
+different subgroups and build a model for each subgroup to predict the 
+probability of the risk of having heart attack.
+
+
+Height    Weight
+185        72
+170        56
+168        60
+179        68
+182        72
+188        77
+180        71
+180        70
+183        84
+180        88
+180        67
+177        76

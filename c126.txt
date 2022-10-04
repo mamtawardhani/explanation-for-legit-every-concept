@@ -1,0 +1,22 @@
+ngrok is a cross-platform application that enables developers to 
+expose a local development server to the Internet with minimal effort. 
+The software makes your locally-hosted web server appear to be hosted 
+on a subdomain of ngrok.com, meaning that no public IP or domain name 
+on the local machine is needed.
+
+
+
+
+What is ngrok? Your development machine may be connected to a secure 
+network behind a firewall. To work around access restrictions, ngrok 
+runs a small client process on your machine which creates a private 
+connection tunnel to the cloud service. Your localhost development 
+server is mapped to an ngrok.io sub-domain, which a remote user can 
+then access. There’s no need to expose ports, set up forwarding, or 
+make other network changes.
+
+
+ngrok is a terminal based software that allows one to run his local host 
+web
+page on other devices, it provides a link, with which we can be forwarded 
+to a special local host.

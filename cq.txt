@@ -1,0 +1,39 @@
+(8) There exists an array whic looks like:
+num = [ 2, 6, 12, 55, 35, 65, 99, 23]. If the first value 2, 
+is at an index (location) of 0. What is the maximum index of this 
+array?
+
+(a) 6
+(b) 7 (correct)
+(c) 8
+(d) 5
+
+
+
+
+(9) + in mathematics is use dto ADD. Hoever, when the same + is used
+with strings (messages), they tend to concatenate (combine) in the 
+given sequence. Guess the output of the following:
+"Hello! " + "How are you doing? " + "It's a good day!" + 
+" Hope to see you soon!"
+
+(a) Hello! Hope to see you soon! It's a good day! How are you doing?
+(b) Hello It's a good day! How are you doing? Hope to see you soon!
+(c) Hello! How are you doing? It's a good day! Hope to see you soon!
+(correct)
+(d) Hello! How are you doing? Hope to see you soon!
+
+
+(10) In javascript, what will be the outcome of the following code?
+a = 15
+b = "Hello"
+print(a+b)
+
+(a) 15Hello  
+(b) It will throw error
+(c) Hello15
+(d) 15
+
+
+
+(11) Input is what user gives

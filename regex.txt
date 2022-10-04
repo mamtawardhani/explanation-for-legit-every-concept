@@ -1,0 +1,31 @@
+A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
+
+RegEx can be used to check if a string contains the specified search pattern.
+
+
+Example:
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+
+if x:
+  print("YES! We have a match!")
+else:
+  print("No match")
+
+
+
+(1) while true
+(2) def get response
+(3) message_probability
+(4) check all messages
+
+
+
+
+
+Before the industrial revolution, biologists in England observed that most peppered moths were light in color. After the industrial revolution began, most of the peppered moths observed were dark in color. Which statement best explains the observed change in moth color during the industrial revolution?
+answer choices
+Light-color moths were more fit for survival because they were less camouflaged against the darkened, soot-covered tree bark
+Dark-color moths were more fit for survival because they were less camouflaged against the darkened, soot-covered tree bark.
+Light-color moths were more fit for survival because they were more camouflaged against the darkened, soot-covered tree bark.
+Dark-color moths were more fit for survival because they were more camouflaged against the darkened, soot-covered tree bark.

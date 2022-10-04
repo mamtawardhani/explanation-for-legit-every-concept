@@ -1,0 +1,21 @@
+Increase the training speed as all data had been converted into the 
+normalized range (0,1). All parameters are not in the divergent range.
+
+Balance the importance of each feature. For example, if you have two 
+independent variables in different ranges [1, 2] and [1000, 2000] and 
+you didn’t scale, then it’s likely the latter variables are considered 
+dominent
+
+
+StandardScaler comes into play when the characteristics of the input 
+dataset differ greatly between their ranges, or simply when they are
+measured in different units of measure.
+
+The idea behind the StandardScaler is that variables that are measured
+ at different scales do not contribute equally to the fit of the model
+ and the learning function of the model and could end up creating a 
+bias. 
+
+So, to deal with this potential problem, we need to standardize the 
+data (μ = 0, σ = 1) that is typically used before we integrate it 
+into the machine learning model.

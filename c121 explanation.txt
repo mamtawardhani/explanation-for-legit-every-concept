@@ -1,0 +1,83 @@
+So our algorithm or the steps will be
+as follows:-
+1. Capture and store the
+background frame. [ This will be
+done for some seconds ]
+2. Detect the red colored cloth
+using color detection and
+segmentation algorithm.
+3. Segment out the red colored
+cloth by generating a mask. [ used
+in code ]
+4. Generate the final augmented
+output to create a magical effect. [
+video.mp4 ]
+
+
+
+
+
+A mask is a binary image consisting of zero- and non-zero values. 
+If a mask is applied to another binary or to a grayscale image of 
+the same size, all pixels which are zero in the mask are set to 
+zero in the output image.
+
+
+
+The inRange() function returns an array consisting of elements equal 
+to 0 if the elements of the source array lie between the elements of 
+the two arrays representing the upper bounds and the lower bounds.
+
+
+resultarray = inRange(sourcearray, upperboundarray, lowerboundarray)
+
+
+(1) Fourcc:
+FourCC is a 4-byte code used to specify the video codec. List of codes 
+can be obtained at Video Codecs by FourCC. The codecs for Windows is 
+DIVX and for OSX is avc1, h263. FourCC code is passed as cv2
+
+(2) Cv2.morphologyEX()
+Dilate : The cv2. dilate() is an OpenCV function in Python that applies 
+a morphological filter to images. The cv2. dilate() method takes two 
+inputs, of which one is our input image; the second is called the 
+structuring element or kernel, which decides the nature of the operation.
+
+(3) AddWeighted
+addWeighted is a function that helps in alpha blending of the image. Alpha 
+blending helps in overlaying a foreground image with a transparent look while 
+it has a background image over this one. The transparency is usually the fourth 
+channel of any image. This transparency mask is known as an alpha mask. The 
+foreground image is on the top left, while the gray scale is the alpha mask 
+which is on the top right.
+Dilation adds pixels to the boundaries of objects in an image, while erosion 
+removes pixels on object boundaries. The number of pixels added or removed 
+from the objects in an image depends on the size and shape of the structuring 
+element used to process the image.
+
+waitkey() function of Python OpenCV allows users to display a window for 
+given milliseconds or until any key is pressed.
+
+
+Dilation adds pixels to the boundaries of objects in an image, while erosion 
+removes pixels on object boundaries.
+
+
+dtype dtype('uint8') dtype objects also contain information about the 
+type, such as its bit-width and its byte-order. The data type can also be 
+used indirectly to query properties of the type, such as whether it is an 
+integer: >>> d = np
+
+(5) np.ones()
+The numpy.ones() function returns a new array of given shape and type, with ones.
+
+import numpy as geek
+ 
+b = geek.ones(2, dtype = int)
+print("Matrix b : \n", b)
+ 
+a = geek.ones([2, 2], dtype = int)
+print("\nMatrix a : \n", a)
+ 
+
+Image= alpha * image1 + beta * image2 + y
